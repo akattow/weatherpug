@@ -6,7 +6,7 @@ var weatherPhoto = {
 	rainy: "https://scontent.xx.fbcdn.net/v/t1.0-9/12190965_948518655232961_5451649818047316633_n.jpg?oh=ea96536fb6087f5f7147bdf19db5b3f9&oe=591702AC",
 	foggy: "https://scontent.xx.fbcdn.net/v/t31.0-8/p960x960/13735613_1113765832041575_785762881380760053_o.jpg?oh=d0138745fafdf70bf9dbac7781ec36ff&oe=59244392",
 	panic: "https://scontent.xx.fbcdn.net/v/t1.0-9/946797_983020775116082_5753925804952337277_n.jpg?oh=03dd29ecdb8036dfa65cbd49c839905f&oe=58D89546",
-	sleepy: url(/assets/sleepy.jpg)
+	sleepy: "../assets/sleepy.jpg"
 };
 
 var weatherQuote = {
