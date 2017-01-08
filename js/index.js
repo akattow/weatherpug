@@ -1,7 +1,7 @@
 var weatherPhoto = {
-	cloudy: "https://scontent.xx.fbcdn.net/v/t1.0-9/14237627_1151390654945759_5863466229506200890_n.jpg?oh=b583069e939825916059c570fb43ae26&oe=591607D9",
-	sunny: "https://scontent.xx.fbcdn.net/v/t1.0-9/944007_1045807638837395_8749298699073196814_n.jpg?oh=c60c8fe7761040205fe7191930cdc94f&oe=59249274",
-	cold: "https://scontent.xx.fbcdn.net/v/t31.0-8/p960x960/12377722_972171342867692_3213836645473206321_o.jpg?oh=41f085b97f45a6a2f33ab17f52118f6a&oe=58DCA746",
+	cloudy: "https://kattow88.github.io/weatherpug/assets/cloudy.jpg",
+	sunny: "https://kattow88.github.io/weatherpug/assets/sunny.jpg",
+	cold: "https://kattow88.github.io/weatherpug/assets/cold.jpg",
 	snowy: "https://kattow88.github.io/weatherpug/assets/snowy.jpg",
 	rainy: "https://kattow88.github.io/weatherpug/assets/rainy.jpg",
 	foggy: "https://kattow88.github.io/weatherpug/assets/foggy.jpg",
