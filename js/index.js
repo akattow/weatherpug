@@ -23,7 +23,7 @@ var weatherQuote = {
 
 
 function getWeather() {
-	$.getJSON("http://ipinfo.io", function(x) {
+	$.getJSON("https://ipinfo.io", function(x) {
 		var location = x.loc;
 		var splitLoc = location.split(",");
 		var latitude = Number(Number(splitLoc[0]).toFixed(2));
@@ -35,7 +35,7 @@ function getWeather() {
 
 		$("#location").html(city + ", " + state + "  |  ");
 
-			var apiUrl = "http://api.openweathermap.org/data/2.5/weather?lat=%lat%&lon=%long%&APPID=527a4c21b597169e7cec5fce156297ef";
+			var apiUrl = "https://api.openweathermap.org/data/2.5/weather?lat=%lat%&lon=%long%&APPID=527a4c21b597169e7cec5fce156297ef";
 			var urlLat = apiUrl.replace("%lat%", latitude);
 			var urlLatLong = urlLat.replace("%long%", longitude);
 
