@@ -1,0 +1,121 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	margin: auto;
+	background-image: url(http://www.itsdougthepug.com/images/bg.png);
+	background-repeat: x-repeat;
+ }
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: #ffba00;
+}
+
+ul {
+	list-style-type: none;
+	margin: .5em 1em;
+	padding: 0;
+	overflow: hidden;
+}
+
+li {
+	float: right;
+	text-transform: uppercase;
+	font-size: .9em;
+}
+
+#home {
+	float: left;
+}
+
+li a {
+	display: block;
+	padding: 8px;
+}
+
+.title h1 {
+	text-transform: uppercase;
+	font-size: 4em;
+	margin: .25em auto 0 auto;
+}
+
+#the {
+	font-size: .6em;
+}
+
+.title h3 {
+	text-transform: uppercase;
+	margin-top: .25em;
+	font-size: 1.25em;
+	letter-spacing: .25em;
+}
+
+#dougPic {
+	height: 50vh;
+	width: 50vh;
+	margin: auto;
+	background-size: contain;
+	border: 15px solid white;
+	border-radius: 50%;
+}
+
+#dougQuote {
+	margin: 3vh auto;
+	font-size: 1.2em;
+}
+
+button {
+	font-family: Montserrat;
+	font-size: 2em;
+	width: 30vh;
+	padding: .25em;
+	border: 15px solid white;
+	background-color: rgba(255, 255, 255, 0);
+	color: black;
+}
+
+button:hover {
+	background-color: rgba(255, 255, 255, 0);
+	border-color: #ffba00;
+}
+
+#f {
+	display: none;
+}
+
+.desc {
+	margin-top: 1em;
+	text-transform: capitalize;
+}
+
+.desc h3 {
+	display: inline;
+}
+
+footer {
+	margin: 1em auto;
+}
+
+footer h5 {
+	display: inline;
+}
+
+@media screen and (max-width: 480px) {
+	#youtube {
+		display: none;
+	}
+	#instagram {
+		display: none;
+	}
+	footer h5 {
+		display: block;
+		margin: .75em;
+	}
+	#spacer {
+		display: none;
+	}
+}
