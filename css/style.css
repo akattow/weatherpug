@@ -54,6 +54,17 @@ li a {
 	letter-spacing: .25em;
 }
 
+#dougHover {
+	height: 50vh;
+	width: 50vh;
+	margin: auto;
+	background-size: contain;
+	border: 15px solid white;
+	border-radius: 50%;
+	background-image: url(https://kattow88.github.io/weatherpug/assets/hover-doug.jpg);
+	display: none;
+}
+
 #dougPic {
 	height: 50vh;
 	width: 50vh;

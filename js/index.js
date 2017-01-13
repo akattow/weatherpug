@@ -1,12 +1,12 @@
 var weatherPhoto = {
-	cloudy: "https://kattow88.github.io/weatherpug/assets/cloudy.jpg",
-	sunny: "https://kattow88.github.io/weatherpug/assets/sunny.jpg",
-	cold: "https://kattow88.github.io/weatherpug/assets/cold.jpg",
-	snowy: "https://kattow88.github.io/weatherpug/assets/snowy.jpg",
-	rainy: "https://kattow88.github.io/weatherpug/assets/rainy.jpg",
-	foggy: "https://kattow88.github.io/weatherpug/assets/foggy.jpg",
-	panic: "https://kattow88.github.io/weatherpug/assets/panic.jpg",
-	sleepy: "https://kattow88.github.io/weatherpug/assets/sleepy.jpg"
+	cloudy: "https://scontent.xx.fbcdn.net/v/t1.0-9/14237627_1151390654945759_5863466229506200890_n.jpg?oh=b583069e939825916059c570fb43ae26&oe=591607D9",
+	sunny: "https://scontent.xx.fbcdn.net/v/t1.0-9/944007_1045807638837395_8749298699073196814_n.jpg?oh=c60c8fe7761040205fe7191930cdc94f&oe=59249274",
+	cold: "https://scontent.xx.fbcdn.net/v/t31.0-8/p960x960/12377722_972171342867692_3213836645473206321_o.jpg?oh=41f085b97f45a6a2f33ab17f52118f6a&oe=58DCA746",
+	snowy: "https://scontent.xx.fbcdn.net/v/t31.0-8/15626380_1252571304827693_4192852349412710848_o.jpg?oh=e0f416951ed33f1c8e2097af130b99b0&oe=591D9DFC",
+	rainy: "https://scontent.xx.fbcdn.net/v/t1.0-9/12190965_948518655232961_5451649818047316633_n.jpg?oh=ea96536fb6087f5f7147bdf19db5b3f9&oe=591702AC",
+	foggy: "https://scontent.xx.fbcdn.net/v/t31.0-8/p960x960/13735613_1113765832041575_785762881380760053_o.jpg?oh=d0138745fafdf70bf9dbac7781ec36ff&oe=59244392",
+	panic: "https://scontent.xx.fbcdn.net/v/t1.0-9/946797_983020775116082_5753925804952337277_n.jpg?oh=03dd29ecdb8036dfa65cbd49c839905f&oe=58D89546",
+	sleepy: "https://scontent.xx.fbcdn.net/v/t1.0-9/14202547_1140020386082786_4996343952956525404_n.jpg?oh=fa29c6c134ade747f5dd7578d34ec67b&oe=591D4029"
 };
 
 var weatherQuote = {
@@ -23,7 +23,7 @@ var weatherQuote = {
 
 
 function getWeather() {
-	$.getJSON("https://ipinfo.io", function(x) {
+	$.getJSON("http://ipinfo.io", function(x) {
 		var location = x.loc;
 		var splitLoc = location.split(",");
 		var latitude = Number(Number(splitLoc[0]).toFixed(2));
@@ -35,7 +35,7 @@ function getWeather() {
 
 		$("#location").html(city + ", " + state + "  |  ");
 
-			var apiUrl = "https://kattow.com/proxy/?lat=%lat%&lon=%long%&APPID=527a4c21b597169e7cec5fce156297ef";
+			var apiUrl = "http://api.openweathermap.org/data/2.5/weather?lat=%lat%&lon=%long%&APPID=527a4c21b597169e7cec5fce156297ef";
 			var urlLat = apiUrl.replace("%lat%", latitude);
 			var urlLatLong = urlLat.replace("%long%", longitude);
 
@@ -117,4 +117,14 @@ $("#c").click(function() {
 $("#f").click(function() {
 	$("#c").show();
 	$("#f").hide();
+});
+
+$("#dougPic").mouseenter(function() {
+	$("#dougHover").show();
+	$("#dougPic").hide();
+});
+
+$("#dougHover").mouseleave(function() {
+	$("#dougPic").show();
+	$("#dougHover").hide();
 });
