@@ -2,7 +2,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	text-align: center;
 	margin: auto;
-	background-image: url(https://kattow88.github.io/weatherpug/assets/bg.png);
+	background-image: url(http://www.itsdougthepug.com/images/bg.png);
 	background-repeat: x-repeat;
  }
 
@@ -59,7 +59,7 @@ li a {
 	width: 50vh;
 	margin: auto;
 	background-size: contain;
-	border: 15px solid white;
+	border: 15px solid #ffba00;
 	border-radius: 50%;
 	background-image: url(https://kattow88.github.io/weatherpug/assets/hover-doug.jpg);
 	display: none;
@@ -82,16 +82,15 @@ li a {
 button {
 	font-family: Montserrat;
 	font-size: 2em;
-	width: 30vh;
-	padding: .25em;
-	border: 15px solid white;
-	background-color: rgba(255, 255, 255, 0);
+	width: 25vh;
+	height: 11vh;
+	border: none;
+	background-color: rgba(255, 255, 255, 1);
 	color: black;
 }
 
 button:hover {
-	background-color: rgba(255, 255, 255, 0);
-	border-color: #ffba00;
+	background-color: #ffba00;
 }
 
 #f {
