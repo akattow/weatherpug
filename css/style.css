@@ -4,6 +4,8 @@ body {
 	margin: auto;
 	background-image: url(http://www.itsdougthepug.com/images/bg.png);
 	background-repeat: x-repeat;
+	background-size: contain;
+	height: 100%;
  }
 
 a {
