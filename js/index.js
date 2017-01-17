@@ -52,11 +52,11 @@ function getWeather() {
 				$("#f").html(tempFahrenheit + "°F");
 				
 				if (x.country === "US") {
-					$("#c").show();
-					$("#f").hide();
-				} else {
-					$("#c").hide();
 					$("#f").show();
+					$("#c").hide();
+				} else {
+					$("#f").hide();
+					$("#c").show();
 				}
 
 				function changePug(z) {
