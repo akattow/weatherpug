@@ -85,7 +85,8 @@ li a {
 button {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 2em;
-	padding: 1em;
+	height: 5vw;
+	width: 15vw;
 	border: none;
 	background-color: rgba(255, 255, 255, 1);
 	color: black;
@@ -128,10 +129,25 @@ footer h5 {
 	}
 	
 	button {
-		width: 
+		width: 20vw;
+		height: 8vw;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	button {
+		height: 12vw;
+	}
 }
 
 @media screen and (max-width: 480px) {	
+	button {
+		height: 15vw;
+		width: 25vw;
+		min-height: 60px;
+		min-width: 100px;
+	}
+	
 	#youtube {
 		display: none;
 	}
