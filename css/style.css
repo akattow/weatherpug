@@ -78,15 +78,15 @@ li a {
 }
 
 #dougQuote {
-	margin: 3vh auto;
+	margin: 1vw auto;
 	font-size: 1.2em;
 }
 
 button {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 2em;
-	width: 25vh;
-	height: 11vh;
+	width: 15vw;
+	height: 5vw;
 	border: none;
 	background-color: rgba(255, 255, 255, 1);
 	color: black;
