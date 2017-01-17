@@ -3,7 +3,7 @@ body {
 	text-align: center;
 	margin: auto;
 	background-image: url(https://kattow88.github.io/weatherpug/assets/bg.png);
-	background-repeat: x-repeat;
+	background-repeat: repeat-x;
 	background-size: contain;
 	height: 100%;
  }
