@@ -23,7 +23,7 @@ var weatherQuote = {
 
 
 function getWeather() {
-	$.getJSON("https://ipinfo.io", function(x) {
+	$.getJSON("https://ipinfo.io/?callback", function(x) {
 		var location = x.loc;
 		var splitLoc = location.split(",");
 		var latitude = Number(Number(splitLoc[0]).toFixed(2));
