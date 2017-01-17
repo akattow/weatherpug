@@ -2,11 +2,12 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	text-align: center;
 	margin: auto;
-	background-image: url(/weatherpug/assets/bg.png);
+	background-image: url(https://kattow88.github.io/weatherpug/assets/bg.png);
 	background-repeat: x-repeat;
 	background-size: contain;
 	height: 100%;
  }
+
 
 a {
 	text-decoration: none;
@@ -19,7 +20,7 @@ a:hover {
 
 ul {
 	list-style-type: none;
-	margin: .5em 1em;
+	margin: 1em 1.5em;
 	padding: 0;
 	overflow: hidden;
 }
@@ -57,8 +58,8 @@ li a {
 }
 
 #dougHover {
-	height: 50vw;
-	width: 50vw;
+	height: 25vw;
+	width: 25vw;
 	margin: auto;
 	background-size: contain;
 	border: 15px solid #ffba00;
@@ -68,8 +69,8 @@ li a {
 }
 
 #dougPic {
-	height: 50vh;
-	width: 50vh;
+	height: 25vw;
+	width: 25vw;
 	margin: auto;
 	background-size: contain;
 	border: 15px solid white;
@@ -82,7 +83,7 @@ li a {
 }
 
 button {
-	font-family: Montserrat;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 2em;
 	width: 25vh;
 	height: 11vh;
@@ -116,7 +117,19 @@ footer h5 {
 	display: inline;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1000px) {
+		#dougHover {
+		height: 50vw;
+		width: 50vw;
+	}
+	
+	#dougPic {
+		height: 50vw;
+		width: 50vw;
+	}
+}
+
+@media screen and (max-width: 480px) {	
 	#youtube {
 		display: none;
 	}
