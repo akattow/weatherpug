@@ -85,8 +85,7 @@ li a {
 button {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 2em;
-	width: 15vw;
-	height: 5vw;
+	padding: 1em;
 	border: none;
 	background-color: rgba(255, 255, 255, 1);
 	color: black;
@@ -118,7 +117,7 @@ footer h5 {
 }
 
 @media screen and (max-width: 1000px) {
-		#dougHover {
+	#dougHover {
 		height: 50vw;
 		width: 50vw;
 	}
@@ -127,6 +126,9 @@ footer h5 {
 		height: 50vw;
 		width: 50vw;
 	}
+	
+	button {
+		width: 
 }
 
 @media screen and (max-width: 480px) {	
