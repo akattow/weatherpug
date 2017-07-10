@@ -35,7 +35,7 @@ function getWeather() {
 
 		$("#location").html(city + ", " + state + "  |  ");
 
-			var apiUrl = "https://kattow.com/proxy/?lat=%lat%&lon=%long%&APPID=527a4c21b597169e7cec5fce156297ef";
+			var apiUrl = "https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat=%lat%&lon=%long%&APPID=527a4c21b597169e7cec5fce156297ef";
 			var urlLat = apiUrl.replace("%lat%", latitude);
 			var urlLatLong = urlLat.replace("%long%", longitude);
 
