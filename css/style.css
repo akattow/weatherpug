@@ -1,13 +1,13 @@
 body {
-	font-family: 'Montserrat', sans-serif;
+	font-family: "Montserrat", sans-serif;
 	text-align: center;
 	margin: auto;
+	background-color: white;
 	background-image: url(https://kattow88.github.io/weatherpug/assets/bg.png);
 	background-repeat: repeat-x;
 	background-size: contain;
 	height: 100%;
- }
-
+}
 
 a {
 	text-decoration: none;
@@ -15,7 +15,8 @@ a {
 }
 
 a:hover {
-	color: #ffba00;
+	color: #996f00;
+	text-decoration: underline;
 }
 
 ul {
@@ -28,7 +29,7 @@ ul {
 li {
 	float: right;
 	text-transform: uppercase;
-	font-size: .9em;
+	font-size: 0.9em;
 }
 
 #home {
@@ -43,18 +44,18 @@ li a {
 .title h1 {
 	text-transform: uppercase;
 	font-size: 4em;
-	margin: .25em auto 0 auto;
+	margin: 0.25em auto 0 auto;
 }
 
 #the {
-	font-size: .6em;
+	font-size: 0.6em;
 }
 
 .title h3 {
 	text-transform: uppercase;
-	margin-top: .25em;
+	margin-top: 0.25em;
 	font-size: 1.25em;
-	letter-spacing: .25em;
+	letter-spacing: 0.25em;
 }
 
 #dougHover {
@@ -78,18 +79,19 @@ li a {
 }
 
 #dougQuote {
-	margin: 1vw auto;
+	margin: 3vh auto;
 	font-size: 1.2em;
 }
 
 button {
-	font-family: 'Montserrat', sans-serif;
+	font-family: "Montserrat", sans-serif;
 	font-size: 2em;
-	height: 5vw;
 	width: 15vw;
+	height: 5vw;
 	border: none;
 	background-color: rgba(255, 255, 255, 1);
 	color: black;
+	padding: 0 1em;
 }
 
 button:hover {
@@ -109,6 +111,49 @@ button:hover {
 	display: inline;
 }
 
+form {
+	width: 80%;
+	margin: 2em auto;
+	height: 15vw;
+}
+
+.searchTerm {
+	display: inline-block;
+	width: 80%;
+	border: 3px solid black;
+	font-family: "Montserrat", sans-serif;
+	font-size: 2em;
+	height: 5vw;
+	border: none;
+	background-color: rgba(255, 255, 255, 1);
+	color: black;
+}
+
+.searchTerm:focus {
+	color: #ffba00;
+}
+
+:focus {
+	outline: 3px solid #ffba00;
+}
+
+.searchButton {
+	display: inline-block;
+	width: 5vw;
+}
+
+.sr-only {
+	display: none;
+	width: 0;
+	height: 0;
+}
+
+.fa {
+	color: black;
+	height: 1em;
+	width: 100%;
+}
+
 footer {
 	margin: 1em auto;
 }
@@ -122,14 +167,19 @@ footer h5 {
 		height: 50vw;
 		width: 50vw;
 	}
-	
+
 	#dougPic {
 		height: 50vw;
 		width: 50vw;
 	}
-	
+
 	button {
 		width: 20vw;
+		height: 8vw;
+	}
+
+	.searchTerm,
+	.searchButton {
 		height: 8vw;
 	}
 }
@@ -138,16 +188,26 @@ footer h5 {
 	button {
 		height: 12vw;
 	}
+	.searchTerm,
+	.searchButton {
+		height: 12vw;
+	}
 }
 
-@media screen and (max-width: 480px) {	
+@media screen and (max-width: 480px) {
 	button {
 		height: 15vw;
 		width: 25vw;
 		min-height: 60px;
 		min-width: 100px;
 	}
-	
+
+	.searchTerm,
+	.searchButton {
+		height: 15vw;
+		min-height: 60px;
+	}
+
 	#youtube {
 		display: none;
 	}
@@ -156,7 +216,7 @@ footer h5 {
 	}
 	footer h5 {
 		display: block;
-		margin: .75em;
+		margin: 0.75em;
 	}
 	#spacer {
 		display: none;
